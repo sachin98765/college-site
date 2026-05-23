@@ -1,0 +1,468 @@
+
+
+
+<!-- 
+  <?php
+  if (isset($_POST["submit"])) {
+    $username = $_POST["user"];
+    $email = $_POST["email"];
+    $phone = $_POST["mobile"];
+    $message = $_POST["message"];
+ 
+    $to = $email;
+    $subject = $message;
+
+    $message = "Name: {$username} Email: {$email} Phone: {$phone}  Message: " . $message;
+
+    // Always set content-type when sending HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+    // More headers
+    $headers .= 'From: bravecoderofficial@gmail.com';
+
+    $mail = mail($to, $subject, $message, $headers);
+
+    if ($mail) {
+      echo "<script>alert('Mail Send.');</script>";
+    }else {
+      echo "<script>alert('Mail Not Send.');</script>";
+    }
+  }
+?>
+ -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MURARAI GOVERNMENT POLYTECHNIC</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+    <div class="navbar-brand-container">
+      <a class="navbar-brand-link" href="index.php">
+        <img src="image/index.jpeg" width="51" height="67" alt="Logo" class="navbar-logo">
+        <span class="navbar-title">MURARAI GOVERNMENT POLYTECHNIC</span>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.php">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="CST.php">Computer Science Technology (CST)</a>
+            <a class="dropdown-item" href="ECE.php">Electronics and Communication Engineering (ECE) </a>
+            <a class="dropdown-item" href="SE.php">Survey Engineering (SE) </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.php">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact-Us/SourceCode/ContactUs/index.php">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link login-link" href="Login-System-php/index.php"><i class="fas fa-sign-in-alt"></i> Log In</a>
+        </li>
+      </ul>
+      <div class="search-container">
+        <input class="form-control search-input" type="search" id="searchInput" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-light search-btn" type="button" onclick="performSearch()">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div id="#demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/3.jpg" alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="image/1.jpg" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="image/2.jpg" alt="New York" width="1100" height="500">
+      </div>
+</div>
+
+</div> 
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <section class="my-5">
+    <div class="py-5">
+      <h2 class="text-center">About Us</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="Row">
+        <div class="col-lg-2 col-md-2 col-12">
+          <img src="image/collage.jpeg" class="img-fluid aboutimg">
+        </div>
+        <div class="Speech">
+          </h1 class="Display-4">Murarai Government Of Polytechnic</h1>
+          <p class="py-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia illo nisi et illum impedit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, ducimus, aut sed dignissimos ut, voluptatibus nesciunt vel earum iste corporis consequatur. Maiores quidem quod, minus nesciunt laborum temporibus enim exercitationem!
+            suscipit rerum reiciendis, sapiente consequuntur dignissimos recusandae maiores rem necessitatibus?</p>
+          <a href="About.php" class="btn btn-success">Click More...</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="my-5">
+    <div class="py-5">
+      <h2 class="text-center">Our Services</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lh-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="image/CST/computer.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Murarai Government of Polytechnic</h4>
+              <p class="card-text">COMPUTER SCIENCE AND TECHNOLOGY.</p>
+              <a href="CST.php" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lh-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="image/ECE/Electronic.jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Murarai Government of Polytechnic</h4>
+              <p class="card-text">ELECTRONICS AND COMMUNICATION ENGINEERING.</p>
+              <a href="ECE.php" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lh-4 col-md-4 col-12">
+          <div class="card">
+            <img class="card-img-top" src="image/SE/servey .jpeg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Murarai Government of Polytechnic</h4>
+              <p class="card-text">SURVEY ENGINEERING.</p>
+              <a href="SE.php" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="my-5">
+    <div class="py-5">
+      <h2 class="text-center">Our Gallery</h2>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-12 ">
+          <img src="image/7.jpg" class="img-fluid" pb-3 >
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-12 ">
+          <img src="image/9.jpg" class="img-fluid" pb-3>
+        </div>
+        
+        <div class="col-lg-2 col-md-2 col-12 ">
+          <img src="image/CST/6.jpeg" class="img-fluid" pb-3>
+        </div>
+   
+      </div>
+
+      <a href="gallery.php" class="btn btn-success">Click More...</a>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="contact-section my-5">
+    <div class="py-5">
+      <h2 class="text-center contact-heading">Get In Touch</h2>
+      <p class="text-center contact-subtext">Have questions? We'd love to hear from you. Send us a message!</p>
+      <div class="text-center mt-4">
+        <a href="Contact-Us/SourceCode/ContactUs/index.php" class="btn btn-lg btn-contact">
+          <i class="fas fa-envelope"></i> Contact Us
+        </a>
+      </div>
+    </div>
+    <!-- <div class="w-50 m-auto" > -->
+
+      <!-- <form action="userinfo.php" method="post">
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" name="user" autocomplete="off" class="form-control">
+        </div>
+        
+        <div class="form-group">
+          <label>Email Id </label>
+          <input type="text" name="email" autocomplete="off" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Mobile Number</label>
+          <input type="text" name="Mobile" autocomplete="off" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Comments</label>
+           <textarea name="comment" cols="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+
+      </form> -->
+  
+    <!-- </div> -->
+  </section>
+
+
+  <section class="footer" bg-ctype_cntrl>
+    <div class="footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="footer_logo">
+              <span style="font-size:20px;"><b>Murarai Government Polytechnic</b></span>
+              <!--                        <img src="behalagovpoly/images/footer_behala_gov_logo.png" alt="" class="img-responsive">-->
+            </div>
+            <div class="footer_para">
+
+              
+              <br>
+              MURARAI<br>
+              Birbhum: 731222<br>
+              <!--                        Tele Fax: (033) 2970 1925<br>-->
+              E-mail: muraraigovt.poly@gmail.com
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h2 class="footer_heading">Quick Links</h2>
+            <ul class="footer_menu">
+              <li><a href="index.php">Home</a></li>
+              <li><a href="javascript:void(0)">Institute</a></li>
+              <li><a href="javascript:void(0)">Academics</a></li>
+              <li><a href="javascript:void(0)">Administration</a></li>
+              <li><a href="javascript:void(0)">Admission</a></li>
+              <li><a href="javascript:void(0)">Downloads</a></li>
+              <li><a href="javascript:void(0)">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h2 class="footer_heading">Related Links</h2>
+            <ul class="footer_menu">
+              <li><a href="javascript:void(0)">Recognition</a></li>
+              <li><a href="javascript:void(0)">Affiliation</a></li>
+              <li><a href="javascript:void(0)">Admission</a></li>
+              <li><a href="javascript:void(0)">Achievements</a></li>
+              <li><a href="javascript:void(0)">Departments</a></li>
+              <li><a href="javascript:void(0)">Directorate</a></li>
+              <li><a href="javascript:void(0)">Holiday List</a></li>
+              <li><a href="https://polytechnic.wbtetsd.gov.in/polytechnic/institute/download_routine/muraraigovpoly">Download Routine</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h2 class="footer_heading">Location</h2>
+            <div class="footer_map">
+
+              <iframe width="300" height="200" frameborder="0" frameborder="0"
+                src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Murarai+Government+Polytechnic731222&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12 copyright">
+            copyright © 2022 Murarai Government Polytechnic
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 designed_by">
+            Designed & Devoloped by <img src="themes/main/images/nic_logo.png" alt="" class="img-responsive">
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--footer end-->
+
+  <!-- js -->
+  <script type="text/javascript" src="themes/default/js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="themes/default/js/bootstrap.min.js"></script>
+  <script src="themes/default/js/stellarnav.min.js"></script>
+  <script src="themes/default/js/gallery.js"></script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark'
+      });
+    });
+  </script>
+
+  <script>
+
+
+    var a = new FgGallery('.fg-gallery', {
+      cols: 4,
+      style: {
+        border: '10px solid #fff',
+        height: '180px',
+        boxShadow: '0 2px 15px -5px #000'
+      }
+    })
+  </script>
+
+
+
+
+
+
+<footer>
+  <p class="p-3 bg-dark text-white text-left">
+    @Sachin
+  </p>
+</footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <script>
+    function performSearch() {
+      const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+
+      if (!searchTerm) {
+        alert('Please enter a search term');
+        return;
+      }
+
+      // Get all text content from the page
+      const pageText = document.body.innerText.toLowerCase();
+
+      // Search for matches
+      if (pageText.includes(searchTerm)) {
+        // Highlight search term in page
+        const regex = new RegExp(`(${searchTerm})`, 'gi');
+        const matches = pageText.match(regex);
+
+        alert(`Found "${searchTerm}" ${matches.length} time(s) on this page.\n\nNavigating to first match...`);
+
+        // Highlight and scroll to first match
+        highlightSearchTerm(searchTerm);
+      } else {
+        alert(`"${searchTerm}" not found on this page.`);
+      }
+    }
+
+    function highlightSearchTerm(term) {
+      const regex = new RegExp(`(${term})`, 'gi');
+      const walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+      );
+
+      let node;
+      const matches = [];
+
+      while (node = walker.nextNode()) {
+        if (regex.test(node.textContent)) {
+          matches.push(node);
+          regex.lastIndex = 0;
+        }
+      }
+
+      if (matches.length > 0) {
+        const span = document.createElement('span');
+        span.style.backgroundColor = 'yellow';
+        span.style.color = 'black';
+        span.style.padding = '2px 4px';
+        span.style.borderRadius = '3px';
+
+        matches[0].parentNode.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+
+    // Allow search on Enter key
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        performSearch();
+      }
+    });
+  </script>
+
+</body>
+
+</html>

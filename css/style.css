@@ -1,0 +1,698 @@
+/* ============================================
+   MURARAI GOVERNMENT POLYTECHNIC - MODERN UI
+   ============================================ */
+
+:root {
+  --primary-color: #003d82;
+  --secondary-color: #0066cc;
+  --accent-color: #00b4d8;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+  --light-bg: #f8f9fa;
+  --dark-text: #333;
+  --border-color: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Roboto",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: var(--dark-text);
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+a {
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================
+   TOP BAR
+   ============================================ */
+
+.top-bar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.top-bar small {
+  font-size: 0.85rem;
+}
+
+.top-bar a {
+  transition: color 0.3s ease;
+}
+
+.top-bar a:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* ============================================
+   NAVBAR STYLING
+   ============================================ */
+
+.modern-navbar {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  box-shadow: 0 2px 15px rgba(0, 61, 130, 0.15);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: white !important;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: translateY(-2px);
+}
+
+.navbar-brand img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin: 0 10px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-login {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  border-radius: 25px;
+  padding: 8px 20px !important;
+  border: 1px solid var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: white !important;
+  color: var(--accent-color) !important;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin-top: 10px !important;
+}
+
+.dropdown-item {
+  color: var(--dark-text);
+  transition: all 0.3s ease;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.dropdown-item:hover {
+  background-color: var(--light-bg);
+  color: var(--secondary-color);
+  padding-left: 25px;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero-section {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: rgba(0, 180, 216, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 1;
+  letter-spacing: -0.5px;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.hero-section .btn {
+  margin-top: 20px;
+  padding: 12px 35px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-section .btn-light {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.hero-section .btn-light:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   CAROUSEL STYLING
+   ============================================ */
+
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators li.active {
+  background-color: var(--accent-color);
+  width: 14px;
+  height: 14px;
+}
+
+/* ============================================
+   FEATURE CARDS
+   ============================================ */
+
+.feature-card {
+  background: white;
+  border: none;
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 61, 130, 0.15);
+}
+
+.feature-card i {
+  font-size: 3.5rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover i {
+  color: var(--secondary-color);
+}
+
+.feature-card h4 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ============================================
+   SECTION HEADINGS
+   ============================================ */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-heading h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  letter-spacing: -0.5px;
+}
+
+.section-heading h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    var(--secondary-color)
+  );
+  border-radius: 3px;
+}
+
+.section-heading p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================
+   DEPARTMENT CARDS
+   ============================================ */
+
+.dept-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dept-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 61, 130, 0.15);
+}
+
+.dept-card-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  transition: transform 0.3s ease;
+}
+
+.dept-card:hover .dept-card-img {
+  transform: scale(1.05);
+}
+
+.dept-card-body {
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dept-card-body h5 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.dept-card-body p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.dept-card-body .btn {
+  align-self: flex-start;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--secondary-color);
+}
+
+.dept-card-body .btn:hover {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+/* ============================================
+   CALL TO ACTION
+   ============================================ */
+
+.cta-section {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 60px 0;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: rgba(0, 180, 216, 0.1);
+  border-radius: 50%;
+}
+
+.cta-section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.cta-section .btn {
+  background-color: white;
+  color: var(--primary-color);
+  padding: 12px 35px;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-section .btn:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  padding: 60px 0 20px;
+  margin-top: 60px;
+}
+
+.footer-heading {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: var(--accent-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 12px;
+}
+
+.footer-menu a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.footer-menu a:hover {
+  color: var(--accent-color);
+  padding-left: 5px;
+}
+
+.footer-menu a i {
+  margin-right: 8px;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-para {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-map {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-map iframe {
+  border-radius: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+  margin-top: 40px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .section-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-section h3 {
+    font-size: 1.8rem;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 5px 0;
+  }
+
+  .navbar-nav .nav-link::after {
+    display: none;
+  }
+
+  .btn-login {
+    margin-top: 10px;
+  }
+
+  .feature-card {
+    padding: 25px 20px;
+  }
+
+  .dept-card-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 0.9rem;
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .footer {
+    padding: 40px 0 20px;
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-padding-sm {
+  padding: 50px 0;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.text-accent {
+  color: var(--accent-color) !important;
+}
+
+.bg-light-blue {
+  background-color: #e8f4f8;
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-md {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 12px;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
